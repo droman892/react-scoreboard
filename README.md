@@ -1,4 +1,4 @@
-![React Scoreboard - Image](-----)
+![React Scoreboard - Image](https://user-images.githubusercontent.com/25372739/127587272-5c5ad2ca-a8d6-4326-b693-804507ccfc1b.JPG)
 
 <p align="center"> This is a dynamically-driven scoreboard application for tracking players and their points. </p>
 
@@ -10,7 +10,7 @@
 
 ## Preview
 
-![React Scoreboard - GIF](-----)
+![React Scoreboard - GIF](https://user-images.githubusercontent.com/25372739/127587951-416980ae-e8ae-4fb7-b18c-ef82eb276bd5.gif)
 
 [Live Preview](https://david-roman.tech/react-scoreboard/)
 
