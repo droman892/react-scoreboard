@@ -6,8 +6,9 @@
 
 ## Description
 
-<p align="center"> ----- </p>
+<p align="center"> This React scoreboard application was built with reusable React elements incorporating JSX, while managing state and event handlers for added interactivity.  </p>
 
+<p align="center"> Users are able to dynamically increment and decrement point values, and alter the number of players accordingly. </p>
 ## Preview
 
 ![React Scoreboard - GIF](https://user-images.githubusercontent.com/25372739/127587951-416980ae-e8ae-4fb7-b18c-ef82eb276bd5.gif)
