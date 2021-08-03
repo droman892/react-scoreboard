@@ -1,60 +1,44 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from './Header';
 import Player from './Player';
 
-
-class Counter extends React.Component {
-    
-    state = {
-        score: 0
-    };
-    
-    raiseScore = () => {
-        this.setState( prevState => ({
-            score: prevState.score + 1
-        }));
-    }
-
-
-    lowerScore = () => {
-        this.setState( prevState => ({
-            score: prevState.score - 1
-        }));
-    }
-
-    render() {
-        return (
-        <div className="counter">
-            <button className="counter-action decrement" onClick={this.lowerScore}> - </button>
-            <span className="counter-score">{this.state.score}</span>
-            <button className="counter-action increment" onClick={this.raiseScore}> + </button>
-        </div>
-        );
-    }
-}
-
-class App extends React.Component {
+class App extends Component {
 
     state = {
         players: [
             {
-                name: "Matthew",
+                name: "Player 1",
+                score: 0,
                 id: 1
             },
             {
-                name: "Mark",
+                name: "Player 2",
+                score: 0,
                 id: 2
             },
             {
-                name: "Luke",
+                name: "Player 3",
+                score: 0,
                 id: 3
             },
             {
-                name: "John",
+                name: "Player 4",
+                score: 0,
                 id: 4
+            },
+            {
+                name: "Player 5",
+                score: 0,
+                id: 5
             }
         ]
     };
+
+    handleScoreChange = (index, delta) => {
+        this.setState( prevState => ({
+            score: prevState.players[index].score += delta
+        }));
+    }
 
     handleRemovePlayer = (id) => {
         this.setState( prevState => {
@@ -72,12 +56,15 @@ class App extends React.Component {
                     totalPlayers={this.state.players.length} 
                 />
 
-                {this.state.players.map( player =>
+                {this.state.players.map( (player, index) =>
                     <Player 
                         name={player.name}
+                        score={player.score}
                         id={player.id}
                         score={player.score}
                         key={player.id.toString()}
+                        index={index}
+                        changeScore={this.handleScoreChange}
                         removePlayer={this.handleRemovePlayer}
                     />
                 )}
