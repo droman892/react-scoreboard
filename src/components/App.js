@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import Player from './Player';
-
+import AddPlayer from './AddPlayer';
 class App extends Component {
 
     state = {
@@ -53,7 +53,7 @@ class App extends Component {
             <div className="scoreboard">
                 <Header 
                     title="Scoreboard" 
-                    totalPlayers={this.state.players.length} 
+                    players={this.state.players}
                 />
 
                 {this.state.players.map( (player, index) =>
@@ -68,6 +68,8 @@ class App extends Component {
                         removePlayer={this.handleRemovePlayer}
                     />
                 )}
+
+                <AddPlayer />
             </div>
         );
     } 
