@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import Counter from './Counter';
 
 const Player = (props) => {
