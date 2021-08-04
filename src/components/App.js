@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Player from './Player';
 import AddPlayer from './AddPlayer';
+
 class App extends Component {
 
     state = {
@@ -36,6 +37,15 @@ class App extends Component {
 
     prevPlayerID = 4;
 
+    getHighScore = () => {
+        const scores = this.state.players.map( p => p.score );
+        const highScore = Math.max(...scores);
+        if (highScore) {
+          return highScore;
+        } 
+        return null;
+      }
+
     handleScoreChange = (index, delta) => {
         this.setState( prevState => ({
             score: prevState.players[index].score += delta
@@ -66,11 +76,12 @@ class App extends Component {
     }
 
     render() {
+
+        const highScore = this.getHighScore();
+
         return (
             <div className="scoreboard">
-                <Header 
-                    players={this.state.players}
-                />
+                <Header players={this.state.players}/>
 
                 {this.state.players.map( (player, index) =>
                     <Player 
@@ -82,6 +93,7 @@ class App extends Component {
                         index={index}
                         changeScore={this.handleScoreChange}
                         removePlayer={this.handleRemovePlayer}
+                        isHighScore={highScore === player.score}
                     />
                 )}
 
