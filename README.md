@@ -8,7 +8,9 @@
 
 <p align="center"> This React scoreboard application was built with reusable React elements incorporating JSX, while managing state and event handlers for added interactivity.  </p>
 
-<p align="center"> Users are able to dynamically increment and decrement point values, and alter the number of players accordingly. </p>
+<p align="center"> Users are able to dynamically interact with the application using the UI components being passed down information with props. </p>
+
+<p align="center"> Regarding UX, users enjoy an easy-to-use UI to add or subtract point values, add or delete players (with the option of creating custom names), and a stopwatch that ticks every second.  Additionally, to enhance the competitive nature amongst players, the player(s) with the greatest number of points will have a crown icon appear golden beside their name.  Both the total number of players and points are also tracked for a well-rounded, multi-purpose scoreboard application. </p>
 
 ## Preview
 
@@ -30,11 +32,10 @@
 
 ## Download and Installation
 
-- Clone the repo: `git clone https://github.com/droman892/react-scoreboard.git`
-
+- Clone the repo: `git clone https://github.com/droman892/react-scoreboard.git` 
 ## Usage
 
------
+After the project files are downloaded, in the terminal, run `npm install` to install the dependencies, followed by `npm start` to start the application.  Once the project has loaded on to the browser, feel free to edit it as you see fit using `./src/index.css` and the component files in `./src/components`.
 
 ## Roadmap
 
