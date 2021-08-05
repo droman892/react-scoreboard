@@ -1,6 +1,6 @@
 body {
   background: #e8e7e7; 
-  font-family: arial;
+  font-family:'Copperplate', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -21,8 +21,6 @@ header h1 {
   font-weight: normal;
 }
 
-/* FORMS */
-
 form {
   display: flex;
   background-color: #09c79e;
@@ -34,22 +32,22 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #c70919;
+  background-color: #067e64;
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
-  color: #87c0b4;
+  color: rgb(255, 245, 245);
   letter-spacing: 2px;
   outline: none;
 }
 
 input[type=text]::-webkit-input-placeholder{
-  color: #87c0b4;
+  color: rgb(255, 245, 245);
   letter-spacing: 2px;
 }
 
 input[type=text]:focus{
-  background-color: rgba(2, 255, 57, 0.2);
+  background-color: #0b997a;
 }
 
 input[type=submit] {
@@ -57,7 +55,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
-  background-color: #3209c7;
+  background-color: #067e64;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -100,7 +98,7 @@ svg {
   background: #fff;
   width: 700px;
   margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(201, 236, 3);
+  box-shadow: 0 2px 0 #05775ea1;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -108,12 +106,12 @@ svg {
 .player {
   display: flex;
   font-size: 1.2em;
-  border-bottom: solid 2px #EEEEEE;
+  border-bottom: solid 2px #05775e3b;
   letter-spacing: 2px;
 }
 
 .player:last-of-type {
-  border-bottom-color: #D4CAFF;
+  border-bottom-color: #05775e3b;
 }
 
 .player-name:hover .remove-player {
@@ -122,7 +120,7 @@ svg {
 
 .player-name,
 .counter-score {
-  color: #dbf114;
+  color: #067e64;
 }
 
 .player-name {
@@ -136,7 +134,7 @@ svg {
   border: none;
   outline: none;
   visibility: hidden;
-  color: #d33634;
+  color: #b93331;
   cursor: pointer;
   margin: 0 10px 0 0;
   padding: 0;
@@ -167,7 +165,7 @@ svg {
 .stopwatch {
   padding: 15px 10px 5px 10px;
   margin: -5px -10px -5px 10px;
-  background: #0be0f0;
+  background: #055745;
 }
 
 .stopwatch-time {
@@ -178,7 +176,7 @@ svg {
 
 .stopwatch button {
   margin: 8px 5px;
-  background-color: #fd0ddd;
+  background-color: #067e64;
   border-radius: 5px;
   padding: 7px 8px;
   border: none;
@@ -191,8 +189,8 @@ svg {
 
 .stopwatch button:hover,
 input[type=submit]:hover {
-  background: #fff;
-  color: #035703;
+  background: #0b997a;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -225,11 +223,11 @@ input[type=submit]:hover {
 }
 
 .increment:hover {
-  background: #5dd652;
+  background: #067e64;
 }
 
 .decrement:hover {
-  background: #d13331;
+  background: #b93331;
 }
 
 .counter-score {

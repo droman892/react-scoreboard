@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class AddPlayer extends Component {
     
+    static propTypes = {
+        addPlayer: PropTypes.func
+      };
+
     state = {
         value: ''
     };
@@ -25,7 +30,7 @@ class AddPlayer extends Component {
                 <input
                     type="text"
                     ref={this.playerInput}
-                    placeholder="Enter a player's name"
+                    placeholder="Enter a player's name..."
                 />
                     
                 <input
@@ -33,7 +38,6 @@ class AddPlayer extends Component {
                    value="Add Player" 
                 />
             </form>
-
         );
     }
 }

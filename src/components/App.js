@@ -26,11 +26,6 @@ class App extends Component {
                 name: "Player 4",
                 score: 0,
                 id: 4
-            },
-            {
-                name: "Player 5",
-                score: 0,
-                id: 5
             }
         ]
     };
@@ -80,6 +75,7 @@ class App extends Component {
         const highScore = this.getHighScore();
 
         return (
+            
             <div className="scoreboard">
                 <Header players={this.state.players}/>
 
