@@ -20,7 +20,7 @@
 
 ## Business Use Case
 
-- Individual needs a straight-forward application for tracking varying integer values (e.g., games, reps/sets)
+- Individual needs a straight-forward application for tracking varying values (i.e., names, points, and time).
 
 ## Status
 
@@ -39,7 +39,10 @@ After the project files are downloaded, in the terminal, run `npm install` to in
 
 ## Roadmap
 
-This React scoreboard application is an on-going project, open to contributions and critique.  
+This React scoreboard application is an on-going project, open to contributions and critique.  Functionality that could improve the UX may include the following:
+1) having the player component(s) slide in descending value according the the number of points they hold 
+2) optimizing the application's mobile layout
+3) connecting a back-end to preserve changes to state
 
 ## Bugs and Issues
 
